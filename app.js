@@ -14,6 +14,9 @@ if (cluster.isMaster) {
   const app = express()
   
 
+  //calling api's end point need to simplify and organize
+  app.use("/",require("./controllers"))
+
   app.use(helmet())
 
   //develop on app startup
@@ -35,14 +38,6 @@ if (cluster.isMaster) {
   dbdebug("Db en")
 
   
-
-  app.get('/', (req, res) => {
-    res.send('Hello World!')
-  })
-
-  app.get('/fast', (req, res) => {
-    res.send('Fast!')
-  })
   const port =  process.env.PORT || 3000
   app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
 }
