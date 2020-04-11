@@ -19,6 +19,7 @@
   "homepage": "https://github.com/HarishRMaryada/node_webserver#readme",
   "dependencies": {
     "config": "^3.3.1",
+    "debug": "^4.1.1",
     "express": "^4.17.1",
     "helmet": "^3.22.0",
     "kafka-node": "^5.0.0",

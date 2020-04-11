@@ -16,17 +16,24 @@ if (cluster.isMaster) {
 
   app.use(helmet())
 
+  //develop on app startup
+  const debug = require('debug')('app:startup')
   //Configuration
-  console.log(config.get('name'))
+  debug(config.get('name'))
   //get user password from env custom env var in config
-  console.log(config.get('user.password'))
+  debug(config.get('user.password'))
 
   //enable in development env
   console.log(app.get('env'))
   if(app.get('env') === 'development'){
-    console.log('Morgan is enabled')
+    debug('Morgan is enabled')
     app.use(morgan('tiny'))
   }
+
+  //develop on app db 
+  const dbdebug = require('debug')('app:db')
+  dbdebug("Db en")
+
   
 
   app.get('/', (req, res) => {
