@@ -8,7 +8,6 @@ const asyncMiddleware = require('../middleware/async')
 
 router.get('/', asyncMiddleware(
     (req, res) => {
-        throw new Error('test')
         res.send('Hello World!')  
     }
 ))
