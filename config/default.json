@@ -1,0 +1,5 @@
+{
+
+    "kafta_go_common":"go_common_service",
+    "kafka_server": "localhost:2181"
+}
