@@ -1,5 +1,6 @@
 {
-    "name":"My MS application",
+    "name":"My MS application-production",
+    "user":{},
     "kafta_go_common":"go_common_service",
     "kafka_server": "localhost:2181"
 }
