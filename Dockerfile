@@ -1,4 +1,5 @@
-FROM node:12.14.1
+FROM node:12-alpine3.9  
+#Added lighter version skips secuirty scan and other features
 
 # Create working directory
 WORKDIR /src/app/core-api
