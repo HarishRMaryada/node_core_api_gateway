@@ -1,3 +1,6 @@
 [submodule "go_common"] 
 	path = go_common
 	url = https://github.com/HarishRMaryada/go_common.git
+[submodule "node_payment_gateway"]
+	path = node_payment_gateway
+	url = https://github.com/HarishRMaryada/node_payment_gateway.git
