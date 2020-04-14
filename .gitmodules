@@ -7,3 +7,6 @@
 [submodule "node_core_api"]
 	path = node_core_api
 	url = https://github.com/HarishRMaryada/node_core_api.git
+[submodule "node_db"]
+	path = node_db
+	url = https://github.com/HarishRMaryada/node_db.git
