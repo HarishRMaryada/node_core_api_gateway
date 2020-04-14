@@ -17,73 +17,12 @@ It will create a directory called node_core_api_gateway inside the current folde
 Inside that directory, project structure is as.,
 ```
 node_core_api_gateway
-├── config
-│   ├── custom-environment-variables.json
-│   ├── default.json
-│   ├── development.json
-│   ├── production.json
-│   └── test.json
-├── controllers
-│   └── index.js
-├── go_common
-├── logs
-│   ├── combined.logs
-│   └── error.logs
-├── middleware
-│   ├── error.js
-│   └── logger.js
-├── node_modules
-├── node_payment_gateway
-├── startup
-│   ├── config.js
-│   ├── db.js
-│   ├── logs.js
-│   └── production.js
-├── tests
-│   └── app.test.js
-├── .dockerignore
+├── go_common [https://github.com/HarishRMaryada/go_common.git]
+├── node_core_api [https://github.com/HarishRMaryada/node_core_api.git]
+├── node_payment_gateway [https://github.com/HarishRMaryada/node_payment_gateway.git]
 ├── .gitignore
 ├── .gitmodules
-├── app.js
-├── Dockerfile
-├── Jenkinsfile
-├── package-lock.json
-├── package.json
-├── README.md
-```
-
-## Installation
-
-Use the node package manager [npm](https://www.npmjs.com/) to install core-api and follow along the repos for respective installations.
-
-```bash 
-> npm install 
-```
-
-## Start
-
-```bash
-> npm start 
-```
-
-## Test
-
-```bash
-> npm test 
-```
-
-## Dependencies
-
-```bash
-None
-```
-
-## Environment Variables
-
-```bash
-
-NODE_ENV = 'String' => enum['production','development']
-PORT ='String' => Number['0000','0001',....,'3000',....,'8080'] 
+└── README.md
 ```
 
 ## Technologies
