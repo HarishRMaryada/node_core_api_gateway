@@ -10,7 +10,6 @@ if (cluster.isMaster) {
 } else {
   //third party imports
   const express = require('express')
-  const helmet = require('helmet')
   const app = express()
 
   //logs any unexceptional/unhandled errors
@@ -22,13 +21,14 @@ if (cluster.isMaster) {
   //calling api's end point need to simplify and organize
   app.use("/", require("./controllers"))
 
-  app.use(helmet())
-
   //configurables
   require('./startup/config')(app)
 
   //global error handler
   app.use(error)
+
+  if (app.get('env') === 'production') 
+    require('./startup/production')(app) 
 
 
   const port = process.env.PORT || 3000

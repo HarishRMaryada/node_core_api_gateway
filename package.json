@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "engines": {
+    "node":"12.14.1"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,7 @@
   },
   "homepage": "https://github.com/HarishRMaryada/node_webserver#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "config": "^3.3.1",
     "debug": "^4.1.1",
     "express": "^4.17.1",
@@ -25,5 +29,8 @@
     "kafka-node": "^5.0.0",
     "morgan": "^1.10.0",
     "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0"
   }
 }
