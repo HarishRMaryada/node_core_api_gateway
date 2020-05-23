@@ -10,3 +10,6 @@
 [submodule "node_db"]
 	path = node_db
 	url = https://github.com/HarishRMaryada/node_db.git
+[submodule "deno_products_api"]
+	path = deno_products_api
+	url = https://github.com/HarishRMaryada/deno_products_api.git
