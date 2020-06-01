@@ -16,3 +16,6 @@
 [submodule "react_native_promote_public"]
 	path = react_native_promote_public
 	url = https://github.com/HarishRMaryada/react_native_promote_public.git
+[submodule "ui_customer"]
+	path = ui_customer
+	url = https://github.com/HarishRMaryada/ui_customer.git
