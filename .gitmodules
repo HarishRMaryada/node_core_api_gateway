@@ -16,6 +16,3 @@
 [submodule "react_native_promote_public"]
 	path = react_native_promote_public
 	url = https://github.com/HarishRMaryada/react_native_promote_public.git
-[submodule "reactjs_promote_public"]
-	path = reactjs_promote_public
-	url = https://github.com/HarishRMaryada/reactjs_promote_public.git
