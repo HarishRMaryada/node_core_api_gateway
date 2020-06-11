@@ -19,3 +19,6 @@
 [submodule "ui_customer"]
 	path = ui_customer
 	url = https://github.com/HarishRMaryada/ui_customer.git
+[submodule "node_api"]
+	path = node_api
+	url = https://github.com/HarishRMaryada/node_rest_api.git
